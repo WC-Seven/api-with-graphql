@@ -1,8 +1,12 @@
 # Installation
 
 ### Initial package
-```
-npm init -y or yarn init -y
+```bash
+# NPM
+npm init -y
+
+# YARN
+yarn init -y
 ```
 ```json
 {
@@ -14,64 +18,37 @@ npm init -y or yarn init -y
   "license": "MIT"
 }
 ```
+
 [⇧ back to top](#Installation)
 
-### Babel - Optional
-```
-npm i -D @babel/core @babel/cli @babel/preset-env @babel/node 
-> *OR
-yarn add @babel/core @babel/cli @babel/preset-env @babel/node -D
-```
-
-"babel/cli" - `@babel/cli`
-"babel/core" - `@babel/core`
-"babel/node" - `@babel/node`
-"babel/preset-env" - `@babel/preset-env`
-
-```
-Create a .babelrc file
-```
-
-```.babelrc
-{
-    "presets": ["@babel/present-dev"]
-}
-```
+---
 
 ### Install - Apollo Server and GraphpQL
-```
-npm i apollo-server graphql graphql-tools
-> *OR
+```bash
+# NPM
+npm install apollo-server graphql graphql-tools 
+# YARN
 yarn add apollo-server graphql graphql-tools
 ```
 
-```
-"Apollo Server" - `apollo-server`
-"GraphQl" - `graphql`
-"GraphQl Tools" - `graphql-tools`
-```
+---
 
 [⇧ back to top](#Installation)
 
 ### Install - Apollo Server and GraphpQL
-```
+```bash
+# NPM
 npm i knex pg dotenv
-> *OR
+# YARN
 yarn add knex pg dotenv
 ```
 
 ```
-"Knex" - `knex`
-"PG" - `pg`
-"Dotenv" - `dotenv`
+**Knex** - `knex`
+**PG** - `pg`
+**Dotenv** - `dotenv`
 ```
 
 [⇧ back to top](#Installation)
+
 ---
-
-# React - Type-Definitions Cheatsheet
-
-### `React.FC<Props>` | `React.FunctionComponent<Props>`
-Type representing a functional component
-```tsx
-const MyComponent: React.FC<Props> = ...
