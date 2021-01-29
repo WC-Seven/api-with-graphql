@@ -1,0 +1,30 @@
+type User {
+    id: Int
+    login: String
+    avatar_url: String
+    tasks: [Task]
+}
+
+type Task {
+    title: String
+    description: String
+}
+
+input UserInput {
+    login: String
+    avatar_url: String
+}
+
+input FiltroInput {
+    id: Int
+}
+
+type Query {
+    user(login: String): User
+}
+
+# type Mutation {
+#     createUser(data: UserInput):User,
+#     updateUser(id: Int!, data: UserInput):User,
+#     deleteUser(filtro: FiltroInput): Boolean,
+# }

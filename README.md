@@ -26,9 +26,9 @@ yarn init -y
 ### Install - Apollo Server and GraphpQL
 ```bash
 # NPM
-npm install apollo-server graphql graphql-tools 
+npm install apollo-server graphql graphql-tools apollo-datasource-rest
 # YARN
-yarn add apollo-server graphql graphql-tools
+yarn add apollo-server graphql graphql-tools apollo-datasource-rest
 ```
 
 ---
@@ -44,9 +44,9 @@ yarn add knex pg dotenv
 ```
 
 ```
-**Knex** - `knex`
-**PG** - `pg`
-**Dotenv** - `dotenv`
+Knex - `knex`
+PG - `pg`
+Dotenv - `dotenv`
 ```
 
 [⇧ back to top](#Installation)

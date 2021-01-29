@@ -106,3 +106,4 @@ dist
 # NPM e Yarn || installation packages
 yarn.lock
 package-lock.json
+/.vscode
