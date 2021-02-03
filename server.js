@@ -10,7 +10,13 @@ const server = new ApolloServer({
         gitHubService: GitHubService,
         userRegisterService: UserRegisterService,
         tasksRegisterService: TasksRegisterService
-    })
+    }),
+    context: ({ req }) => {
+        const userId = req.headers.authorization;
+        return { 
+            userId 
+        };
+    },
 });
 
 server.listen().then(({url}) => console.log(`Server rodando em: ${url}`));
