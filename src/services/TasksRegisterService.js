@@ -24,12 +24,13 @@ class TasksRegisterService{
 
     addTask = async (userId, data) => {
         const taskNew = await db('tasks').returning('*').insert({userId, ...data});
-        return taskNew;
+        return taskNew[0];
     }
 
     updateTask = async (userId, id, data) => {
         await this.getTaskById(userId, id);
-        return await db('tasks').returning('*').where({ id }).update(data);
+        const taskUp = await db('tasks').returning('*').where({ id }).update(data);
+        return taskUp[0];
     }
 
     deleteTask = async (userId, id) => {

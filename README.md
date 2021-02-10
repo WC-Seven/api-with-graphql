@@ -51,4 +51,14 @@ Dotenv - `dotenv`
 
 [⇧ back to top](#Installation)
 
+### Install - JWT(Authentication)
+```bash
+# NPM
+npm i jsonwebtoken
+# YARN
+yarn add jsonwebtoken
+```
+
+[⇧ back to top](#Installation)
+
 ---
